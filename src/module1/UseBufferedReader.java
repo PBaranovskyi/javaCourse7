@@ -22,7 +22,7 @@ public class UseBufferedReader {
 
         char symbol = (char) read;
 
-        System.out.println(symbol);
+        System.out.println("Symbol: " + symbol);
 
 
         int t = 0b101011;
