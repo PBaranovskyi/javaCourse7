@@ -12,10 +12,10 @@ public class UseBufferedReader {
     public static void main(String[] args) throws IOException {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-//        String line = reader.readLine();
-//
-//
-//        System.err.println(line);
+        String line = reader.readLine();
+
+
+        System.err.println(line);
 
 
         int read = reader.read();
@@ -29,8 +29,6 @@ public class UseBufferedReader {
 
 
         System.out.println("Integer " + t);
-
-
 
     }
 }
