@@ -44,7 +44,7 @@ public class Task2 {
 
     }
 
-    private static int random1(int lowBound, int highBound) {
+    public static int random1(int lowBound, int highBound) {
         double random = lowBound + Math.random() * (highBound - lowBound);
         return (int) random;
     }
