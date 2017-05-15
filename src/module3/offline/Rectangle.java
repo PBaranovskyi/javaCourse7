@@ -14,8 +14,13 @@ public class Rectangle extends Shape {
     }
 
     @Override
-    double getArea() {
+    public double getArea() {
         return a * b;
+    }
+
+
+    public void printArea() {
+        System.out.println(" Area : " + this.getArea() );
     }
 
     @Override
@@ -25,8 +30,9 @@ public class Rectangle extends Shape {
 
         Rectangle rectangle = (Rectangle) o;
 
-        if (a != rectangle.a) return false;
+        if (this.a != rectangle.a) return false;
         return b == rectangle.b;
+
     }
 
     @Override
@@ -35,4 +41,5 @@ public class Rectangle extends Shape {
         result = 31 * result + b;
         return result;
     }
+
 }

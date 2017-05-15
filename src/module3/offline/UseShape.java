@@ -11,7 +11,7 @@ public class UseShape {
         Shape circle2 = new Circle(2);
         Shape circle3 = new Circle(5);
 
-        Shape rectangle1 = new Rectangle(2, 6);
+        Rectangle rectangle1 = new Rectangle(2, 6);
         Shape rectangle2 = new Rectangle(1, 8);
         Shape rectangle3 = new Rectangle(20, 5);
 
@@ -34,7 +34,10 @@ public class UseShape {
         System.out.println("Min area : " + listOfShapes.getMinArea());
 
 
-
+        rectangle1.equals(rectangle2);
+        if  (rectangle1 == rectangle2) {
+            System.out.println("equals");
+        }
 
     }
 }

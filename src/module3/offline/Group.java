@@ -30,4 +30,8 @@ public class Group extends ArrayList<Shape> {
         return minArea;
     }
 
+    void removeAll(Shape[] array){
+        // impl
+    }
+
 }
