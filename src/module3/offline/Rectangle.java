@@ -42,4 +42,11 @@ public class Rectangle extends Shape {
         return result;
     }
 
+    @Override
+    public String toString() {
+        return "Rectangle{" +
+                "a=" + a +
+                ", b=" + b +
+                '}';
+    }
 }
