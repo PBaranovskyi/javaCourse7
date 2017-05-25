@@ -3,7 +3,7 @@ package module4;
 /**
  * Created by citsym on 18.05.17.
  */
-public class Book {
+public class Book implements Cloneable {
 
    private String name;
    private String authorName;
@@ -49,7 +49,14 @@ public class Book {
         return result;
     }
 
-//    @Override
+    @Override
+    public Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
+
+
+    //
+////    @Override
 //    public int compareTo(Book book) {
 //
 //        int result = this.getAuthorName().compareTo(book.getAuthorName());
@@ -70,5 +77,10 @@ public class Book {
                 ", authorName='" + authorName + '\'' +
                 ", pageCount=" + pageCount +
                 '}';
+    }
+
+
+    public void setPageCount(int pageCount) {
+        this.pageCount = pageCount;
     }
 }
