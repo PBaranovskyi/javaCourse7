@@ -3,7 +3,7 @@ package module4;
 /**
  * Created by citsym on 18.05.17.
  */
-public class Book implements Cloneable {
+public class Book implements Cloneable, Comparable<Book> {
 
    private String name;
    private String authorName;
@@ -82,5 +82,10 @@ public class Book implements Cloneable {
 
     public void setPageCount(int pageCount) {
         this.pageCount = pageCount;
+    }
+
+    @Override
+    public int compareTo(Book o) {
+        return this.getPageCount() - o.getPageCount();
     }
 }
