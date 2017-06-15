@@ -3,9 +3,9 @@ package module10;
 /**
  * Created by citsym on 29.05.17.
  */
-public class Animal {
+public class Animal implements CanBeFeeded {
 
-    void feed(){
+   public void feed(){
         System.out.println("I`m an animal. And i`m eating the food");
     }
 
