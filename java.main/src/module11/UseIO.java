@@ -12,7 +12,6 @@ public class UseIO {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
 
 
-
         try (ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream("objects"));
              ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream("objects"))
         ) {

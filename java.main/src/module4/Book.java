@@ -79,7 +79,6 @@ public class Book implements Cloneable, Comparable<Book> {
                 '}';
     }
 
-
     public void setPageCount(int pageCount) {
         this.pageCount = pageCount;
     }
@@ -87,5 +86,11 @@ public class Book implements Cloneable, Comparable<Book> {
     @Override
     public int compareTo(Book o) {
         return this.getPageCount() - o.getPageCount();
+    }
+
+    @Override
+    protected void finalize() throws Throwable {
+        super.finalize();
+        System.out.println("Book with name " + getName() + " is cleared");
     }
 }

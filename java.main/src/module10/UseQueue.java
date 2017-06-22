@@ -19,7 +19,11 @@ public class UseQueue {
             return o1.getAuthorName().compareTo(o2.getAuthorName());
         });
 
-        books.add(new Book("Vedmak", "Anjey Sapkovskey", 500));
+        Book vedmak = new Book("Vedmak", "Anjey Sapkovskey", 500);
+        System.out.println(vedmak);
+
+
+        books.add(vedmak);
         books.add(new Book("1985", "Oruel", 200));
         books.add(new Book("1985", "Oruel", 200));
         books.add(new Book("Harry Patter", "Joana Rolling", 1000));
