@@ -5,6 +5,7 @@ import module4.Book;
 import java.util.List;
 import java.util.PriorityQueue;
 import java.util.Queue;
+import java.util.concurrent.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -13,7 +14,7 @@ import java.util.stream.Stream;
  */
 public class UseQueue {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ExecutionException, InterruptedException {
 
         Queue<Book> books = new PriorityQueue<>((o1, o2) -> {
             return o1.getAuthorName().compareTo(o2.getAuthorName());
@@ -33,7 +34,6 @@ public class UseQueue {
         Stream<Book> uniqueValueStream = books.stream().distinct();
 
         List<Book> collect = uniqueValueStream.collect(Collectors.toList());
-
 
 
 //        for (int i = 0; i < 5; i++) {

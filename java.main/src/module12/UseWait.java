@@ -13,7 +13,6 @@ public class UseWait {
 //            System.out.println("Hello world");
 //        }
 
-
         Object monitor = new Object();
 
 

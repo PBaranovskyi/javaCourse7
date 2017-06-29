@@ -28,6 +28,7 @@ public class Book implements Cloneable, Comparable<Book> {
         return pageCount;
     }
 
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -35,17 +36,14 @@ public class Book implements Cloneable, Comparable<Book> {
 
         Book book = (Book) o;
 
-        if (pageCount != book.pageCount) return false;
-        if (name != null ? !name.equals(book.name) : book.name != null) return false;
-        return !(authorName != null ? !authorName.equals(book.authorName) : book.authorName != null);
-
+        if (getName() != null ? !getName().equals(book.getName()) : book.getName() != null) return false;
+        return getAuthorName() != null ? getAuthorName().equals(book.getAuthorName()) : book.getAuthorName() == null;
     }
 
     @Override
     public int hashCode() {
-        int result = name != null ? name.hashCode() : 0;
-        result = 31 * result + (authorName != null ? authorName.hashCode() : 0);
-        result = 31 * result + pageCount;
+        int result = getName() != null ? getName().hashCode() : 0;
+        result = 31 * result + (getAuthorName() != null ? getAuthorName().hashCode() : 0);
         return result;
     }
 

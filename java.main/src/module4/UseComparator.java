@@ -29,6 +29,9 @@ public class UseComparator {
         });
 
         Book oruel = new Book("1984", "Oruel", 200);
+        Book oruel2 = new Book("1984", "Oruel", 250);
+
+
 
         library = new HashSet<>();
 
