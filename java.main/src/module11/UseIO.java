@@ -16,11 +16,10 @@ public class UseIO {
              ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream("objects"))
         ) {
 
-
-            //        Car car = new Car();
-//        car.setColor("Red");
-//        car.setYear(2000);
-//        car.setName("Nissan");
+            Car car = new Car();
+        car.setColor("Red");
+        car.setYear(2000);
+        car.setName("Nissan");
 //
 //        Car car2 = new Car();
 //        car2.setColor("Blue");
@@ -28,7 +27,7 @@ public class UseIO {
 //        car2.setName("Some");
 //
 //        ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream("objects"));
-//        objectOutputStream.writeObject(car);
+        objectOutputStream.writeObject(car);
 //        objectOutputStream.writeObject(car2);
 
 
@@ -39,14 +38,14 @@ public class UseIO {
 //        System.out.println(car1.getName());
 //        System.out.println(car1.getYear());
 
-            Car car22 = (Car) objectInputStream.readObject();
-            System.out.println(car22);
+//            Car car22 = (Car) objectInputStream.readObject();
+//            System.out.println(car22);
 //        System.out.println(car22.getColor());
 //        System.out.println(car22.getName());
 //        System.out.println(car22.getYear());
 
-            Car car23 = (Car) objectInputStream.readObject();
-            System.out.println(car22);
+//            Car car23 = (Car) objectInputStream.readObject();
+//            System.out.println(car22);
 
         }
     }

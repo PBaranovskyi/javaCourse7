@@ -12,7 +12,7 @@ public class Car implements Serializable {
 
     String name;
     String color;
-    transient int year;
+     int year;
     int some;
 
     Engine engine;
