@@ -1,5 +1,7 @@
 package module10;
 
+import module7.cars.Car;
+
 import java.util.Arrays;
 
 /**
@@ -36,7 +38,7 @@ public class UseGenerics {
 
         ElementAdder<Animal> elementAdder = new ElementAdder<>();
 
-        elementAdder.addElementToArray(animals, new Animal());
+        elementAdder.addElementToArray(animals, new Animal(), new Car());
 //        elementAdder.addElementToArray(robots, new Robot());
 //        elementAdder.addElementToArray(robots, new Robot());
 

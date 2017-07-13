@@ -7,7 +7,7 @@ import java.util.Arrays;
  */
 public class ElementAdder<T extends CanBeFeeded> {
 
-    public T[] addElementToArray(T[] animals, T element) {
+    public <E> T[] addElementToArray(T[] animals, T element, E some) {
         T[] newArray = Arrays.copyOf(animals, animals.length + 1);
         newArray[newArray.length-1] = element;
 
